@@ -1,5 +1,19 @@
 import type { Metadata } from "next";
+import { Inter, Source_Serif_4, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+
+const fontSerif = Source_Serif_4({
+  subsets: ["latin"],
+  variable: "--font-serif",
+});
+
+const fontMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,8 +26,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="pt" className={cn("font-sans", inter.variable)}>
+      <body
+        className={`${inter.variable} ${fontSerif.variable} ${fontMono.variable} antialiased bg-slate-950 text-slate-300 bg-[url("/image.png")] bg-center md:bg-top-right`}
+      >
+        <main className="container max-w-7xl mx-auto min-h-dvh py-6 md:py-2 ">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
