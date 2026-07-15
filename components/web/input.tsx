@@ -7,7 +7,7 @@ export function InputRoot({ className, children, ...props }: InputRootProps) {
   return (
     <div
       className={cn(
-        `flex gap-2 items-center border border-transparent focus-within:border-ft-gray-100 py-2 px-3 rounded-md group`,
+        `bg-ft-gray-800 flex gap-2 items-center border border-ft-gray-600 focus-within:border-ft-gray-100 py-2 px-3 rounded-md group`,
         className,
       )}
       {...props}
@@ -43,7 +43,7 @@ export function InputField({
     <input
       type="text"
       placeholder={placeholder}
-      className="outline-0 placeholder-ft-gray-400 w-full "
+      className=" outline-0 placeholder-ft-gray-400 w-full "
       {...props}
     />
   );
