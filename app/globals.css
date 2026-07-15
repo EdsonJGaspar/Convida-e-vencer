@@ -4,6 +4,24 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-*: initial;
+
+  --color-ft-blue: #6f9de2;
+  --color-ft-purple: #9871f3;
+  --color-ft-dunger: #f05d6c;
+
+  --color-ft-gray-100: #dae4f2;
+  --color-ft-gray-200: #c8d0da;
+  --color-ft-gray-300: #95a1b1;
+  --color-ft-gray-400: #6f7d90;
+  --color-ft-gray-500: #2a313c;
+  --color-ft-gray-600: #21252c;
+  --color-ft-gray-700: #191d24;
+  --color-ft-gray-800: #13161b;
+  --color-ft-gray-900: #0f1216;
+}
+
 @theme inline {
   --font-sans: var(--font-sans);
   --font-mono: JetBrains Mono, monospace;

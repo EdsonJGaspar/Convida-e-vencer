@@ -28,11 +28,9 @@ export default function RootLayout({
   return (
     <html lang="pt" className={cn("font-sans", inter.variable)}>
       <body
-        className={`${inter.variable} ${fontSerif.variable} ${fontMono.variable} antialiased bg-slate-950 text-slate-300 bg-[url("/image.png")] bg-center md:bg-top-right`}
+        className={`${inter.variable} ${fontSerif.variable} ${fontMono.variable} antialiased bg-ft-gray-900 text-ft-gray-300 bg-[url("/image.png")] bg-center md:bg-top-right`}
       >
-        <main className="container max-w-7xl mx-auto min-h-dvh py-6 md:py-2 ">
-          {children}
-        </main>
+        <main className="container max-w-7xl mx-auto s">{children}</main>
       </body>
     </html>
   );
