@@ -1,5 +1,6 @@
-import { Mail, User } from "lucide-react";
+import { ArrowRight, Mail, User } from "lucide-react";
 import { InputField, InputIcon, InputRoot } from "./input";
+import { ButtomForm } from "./button";
 
 export function FormCard() {
   return (
@@ -19,7 +20,9 @@ export function FormCard() {
           <InputField placeholder="E-mail" />
         </InputRoot>
       </div>
-      <button>COnfoimar</button>
+      <ButtomForm>
+        Confirmar <ArrowRight />{" "}
+      </ButtomForm>
     </form>
   );
 }
