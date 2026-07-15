@@ -4,7 +4,7 @@ import { ButtomForm } from "./button";
 
 export function FormCard() {
   return (
-    <form className="p-8 bg-ft-gray-600 space-y-6 w-full max-w-[441px] rounded-md">
+    <form className="p-8 bg-ft-gray-700 space-y-6 w-full max-w-[441px] rounded-md border border-ft-gray-600">
       <h2 className="text-ft-gray-200 font-semibold font-mono">Inscrição</h2>
       <div className="space-y-3">
         <InputRoot>

@@ -1,11 +1,14 @@
+import { Radio } from "lucide-react";
+
 export function CardDetails() {
   return (
-    <div className="bg-ft-gray-600 text-ft-gray-300 p-8 space-y-8 rounded-md flex-1">
-      <div className="flex items-center justify-between gap-5">
+    <div className="bg-ft-gray-700 text-ft-gray-300 p-8 space-y-8 rounded-md flex-1 border border-ft-gray-600">
+      <div className="flex items-center justify-between gap-5 ">
         <h1 className="text-ft-gray-200 font-semibold text-lg md:text-xl font-mono">
           Sobre o evento
         </h1>
-        <span className="font-medium text-xs md:text-sm uppercase text-ft-purple">
+        <span className="font-medium text-xs md:text-sm uppercase text-ft-purple flex items-center justify-center gap-2.5">
+          <Radio />
           Ao vivo
         </span>
       </div>
