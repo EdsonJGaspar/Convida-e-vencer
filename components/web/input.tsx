@@ -43,7 +43,7 @@ export function InputField({
     <input
       type="text"
       placeholder={placeholder}
-      className=" outline-0 placeholder-ft-gray-400 w-full "
+      className=" outline-0 placeholder-ft-gray-400 w-full text-ft-gray-200 "
       {...props}
     />
   );

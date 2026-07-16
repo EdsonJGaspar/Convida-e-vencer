@@ -1,9 +1,19 @@
+"use client";
+
 import { Copy, Link, MousePointerClick } from "lucide-react";
 import { InputField, InputIcon, InputRoot } from "./input";
 import { ButtomForm } from "./button";
 import { CardStatistic } from "./card-statistic";
+interface AboutCardProps {
+  subscribId: string;
+}
+export function AboutCard({ subscribId }: AboutCardProps) {
+  const api = `http://localhost:3333/invites/${subscribId}`;
 
-export function AboutCard() {
+  const copyLink = () => {
+    navigator.clipboard.writeText(api);
+  };
+
   return (
     <aside className="space-y-10">
       <div className="space-y-1.5">
@@ -26,8 +36,8 @@ export function AboutCard() {
           <InputIcon>
             <Link />
           </InputIcon>
-          <InputField placeholder="http://localhost/3000/invite/12" />
-          <ButtomForm className="w-fit p-2">
+          <InputField readOnly defaultValue={api} />
+          <ButtomForm className="w-fit p-2" onClick={copyLink}>
             <Copy />
           </ButtomForm>
         </InputRoot>
